@@ -13,7 +13,7 @@ public class SslHttpClient
         _logger = logger;
     }
 
-    public async Task<HttpResponseMessage> DetectSslExpiry(string url, int thresholdDate)
+    public async Task<HttpResponseMessage> DetectSslExpiryAsync(string url, int thresholdDate, CancellationToken token)
     {
         // Create an HttpClientHandler object and set to use default credentials
         using var handler = new HttpClientHandler();
@@ -48,6 +48,6 @@ public class SslHttpClient
         // Create an HttpClient object
         using var client = new HttpClient(handler);
 
-        return await client.GetAsync(url);
+        return await client.GetAsync(url, token);
     }
 }

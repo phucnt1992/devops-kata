@@ -1,25 +1,44 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.002.0
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevOpsKata.SslCertExpiryDetector", "src/01-ssl-expiration-detection/DevOpsKata.SslCertExpiryDetector.csproj", "{A79082B2-16E1-439F-ADB7-37202F19B5CD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{18A18A5B-A852-4BE8-8A8A-AD03C5D96568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsKata.Common", "src\common\DevOpsKata.Common.csproj", "{71C68F9F-8325-42DE-9A9B-30D6A93A8241}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kata", "kata", "{0F68C76F-507D-42E4-812A-04A33D039CF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsKata.SslCertExpiryDetector", "src\kata\SslExpiryDetector\DevOpsKata.SslCertExpiryDetector.csproj", "{D6A0C5FD-C2AF-409B-B2AC-7D4708C2A043}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOpsKata.Cli", "src\cli\DevOpsKata.Cli.csproj", "{7EF423E2-0F17-4E3E-BEB1-4B6D9FC4324B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A79082B2-16E1-439F-ADB7-37202F19B5CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A79082B2-16E1-439F-ADB7-37202F19B5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A79082B2-16E1-439F-ADB7-37202F19B5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A79082B2-16E1-439F-ADB7-37202F19B5CD}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF4CC94E-28A1-44C7-B131-8E44DFAC4991}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71C68F9F-8325-42DE-9A9B-30D6A93A8241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C68F9F-8325-42DE-9A9B-30D6A93A8241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C68F9F-8325-42DE-9A9B-30D6A93A8241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C68F9F-8325-42DE-9A9B-30D6A93A8241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A0C5FD-C2AF-409B-B2AC-7D4708C2A043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A0C5FD-C2AF-409B-B2AC-7D4708C2A043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A0C5FD-C2AF-409B-B2AC-7D4708C2A043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A0C5FD-C2AF-409B-B2AC-7D4708C2A043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF423E2-0F17-4E3E-BEB1-4B6D9FC4324B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF423E2-0F17-4E3E-BEB1-4B6D9FC4324B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF423E2-0F17-4E3E-BEB1-4B6D9FC4324B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF423E2-0F17-4E3E-BEB1-4B6D9FC4324B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71C68F9F-8325-42DE-9A9B-30D6A93A8241} = {18A18A5B-A852-4BE8-8A8A-AD03C5D96568}
+		{0F68C76F-507D-42E4-812A-04A33D039CF2} = {18A18A5B-A852-4BE8-8A8A-AD03C5D96568}
+		{D6A0C5FD-C2AF-409B-B2AC-7D4708C2A043} = {0F68C76F-507D-42E4-812A-04A33D039CF2}
+		{7EF423E2-0F17-4E3E-BEB1-4B6D9FC4324B} = {18A18A5B-A852-4BE8-8A8A-AD03C5D96568}
 	EndGlobalSection
 EndGlobal
